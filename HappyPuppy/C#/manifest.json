@@ -1,0 +1,33 @@
+{
+  "visible_filenames": [
+    "Boundaries.cs",
+    "HappyPuppy.feature",
+    "HappyPuppyApp.cs",
+    "HappyPuppyTest.cs",
+    "Presenters.cs",
+    "PresenterTests.cs",
+    "PuppySteps.cs",
+    "Repository.cs",
+    "RepositoryTests.cs",
+    "TestDoubles.cs",
+    "UseCases.cs",
+    "UseCaseTests.cs",
+    "instructions",
+    "RunTests.dll.config",
+    "cyber-dojo.sh"
+  ],
+
+  "filename_extension" : ".cs",
+
+  "display_name": "Happy Puppy, C# SpecFlow",
+
+  "image_name": "cyberdojofoundation/csharp_specflow",
+
+  "red_amber_green" : [
+    "lambda { |output|",
+    "  return :red   if /^Errors and Failures:/.match(output)",
+    "  return :green if /^Tests run: (\\d*), Errors: 0, Failures: 0/.match(output)",
+    "  return :amber",
+    "}"
+  ]
+}
