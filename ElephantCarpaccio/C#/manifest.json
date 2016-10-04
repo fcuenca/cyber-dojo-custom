@@ -1,0 +1,23 @@
+
+{
+  "visible_filenames": [
+    "DemoTest.cs",
+    "ElephantCarpaccio.cs",
+    "cyber-dojo.sh",
+    "instructions"
+  ],
+
+  "filename_extension" : ".cs",
+
+  "display_name": "Elephant Carpaccio, C# Moq",
+
+  "image_name": "cyberdojofoundation/csharp_moq",
+
+  "red_amber_green" : [
+    "lambda { |output|",
+    "  return :red   if /^Errors and Failures:/.match(output)",
+    "  return :green if /^Tests run: (\\d*), Errors: 0, Failures: 0/.match(output)",
+    "  return :amber",
+    "}"
+  ]
+}
