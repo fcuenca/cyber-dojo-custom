@@ -5,9 +5,9 @@
     "instructions",
     "Game.cs",
     "GameRunner.cs",
-    "GameRunnerTest.cs"
+    "GameRunnerTest.cs",
     "GoldenMasterData.cs",
-    "GolenMasterTest.cs",
+    "GoldenMasterTest.cs",
     "StdOut.cs",
     "UglyTriviaTests.cs"
   ],
