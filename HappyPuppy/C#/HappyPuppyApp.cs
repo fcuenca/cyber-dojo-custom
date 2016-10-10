@@ -14,14 +14,14 @@ public class HappyPuppyApp
 
         public void ListPuppies()
         {
-            ListPresenter presenter = new ListPresenter(UseCases.ListPuppies);   
+            ListPresenter presenter = new ListPresenter(AppEnv.ListPuppies);   
 
             presenter.Execute();
         }
 
         public void ListOwners()
         {
-            ListPresenter presenter = new ListPresenter(UseCases.ListOwners);
+            ListPresenter presenter = new ListPresenter(AppEnv.ListOwners);
 
             presenter.Execute();
         }
@@ -29,7 +29,7 @@ public class HappyPuppyApp
         public void Adopt(string puppyName, string ownerName)
         {
             AdoptPuppyPresenter presenter = new AdoptPuppyPresenter(
-                puppyName, ownerName, UseCases.AdoptPuppy);
+                puppyName, ownerName, AppEnv.AdoptPuppy);
 
             presenter.Execute();
         }

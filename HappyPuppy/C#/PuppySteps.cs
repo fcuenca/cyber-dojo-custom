@@ -76,7 +76,7 @@ public class AppDriver
         {
             if(app == null)
             {
-                UseCases.repo = new ListBasedRepository(database);
+                AppEnv.repo = new ListBasedRepository(database);
                 app = new AppDriver();
             }
             return app;
@@ -86,7 +86,7 @@ public class AppDriver
     public void AdoptPuppy(string puppyName, string customerName)
     {
         adoptionWasConfirmed = false;
-        UseCases.AdoptPuppy.Execute(
+        AppEnv.AdoptPuppy.Execute(
             puppyName, customerName, () => adoptionWasConfirmed = true);
     }
 
@@ -94,7 +94,7 @@ public class AppDriver
     {
         List<string> knownOwners = new List<string>();  
       
-        UseCases.ListOwners.Execute(s => knownOwners.Add(s));
+        AppEnv.ListOwners.Execute(s => knownOwners.Add(s));
 
         Assert.That(knownOwners, Has.Member(newOwner));
     }
@@ -103,7 +103,7 @@ public class AppDriver
     {
         List<string> availablePuppies = new List<string>(); 
  
-        UseCases.ListPuppies.Execute(s => availablePuppies.Add(s));
+        AppEnv.ListPuppies.Execute(s => availablePuppies.Add(s));
 
         Assert.That(availablePuppies, Has.No.Member(puppyName));
     }

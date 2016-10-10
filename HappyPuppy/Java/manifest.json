@@ -1,0 +1,36 @@
+
+{
+  "visible_filenames": [
+    "instructions",
+    "AppDriver.java",
+    "AppEnv.java",
+    "Boundaries.java",
+    "HappyPuppy.feature",
+    "HappyPuppyApp.java",
+    "HappyPuppyStepDef.java",
+    "HappyPuppyTest.java",
+    "Presenters.java",
+    "PresenterTests.java",
+    "Repository.java",
+    "RepositoryTests.java",
+    "RunCukesTest.java",
+    "TestDoubles.java",
+    "UseCases.java",
+    "UseCaseTests.java",
+    "cyber-dojo.sh"
+  ],
+
+  "filename_extension" : ".java",
+
+  "display_name": "Happy Puppy, Java Cucumber",
+
+  "image_name": "cyberdojofoundation/java_cucumber_pico",
+
+  "red_amber_green" : [
+    "lambda { |output|",
+    "  return :red   if /FAILURES!!!/.match(output)",
+    "  return :green if /OK \\((\\d*) tests\\)/.match(output)",
+    "  return :amber",
+    "}"
+  ]
+}

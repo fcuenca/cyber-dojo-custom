@@ -41,6 +41,6 @@ public class HappyPuppyTest
                 new List<string>()
                     { "Brook", "Hanna", "Maggie Mae", "Ruby Sue" });
 
-            UseCases.repo = new ListBasedRepository(db);
+            AppEnv.repo = new ListBasedRepository(db);
       }
 }
