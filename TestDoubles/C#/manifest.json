@@ -1,0 +1,29 @@
+
+{
+  "visible_filenames": [
+    "instructions",
+    "cyber-dojo.sh",
+    "FakeSampleTest.cs",
+    "Hiker.cs",
+    "HikerHelper.cs",
+    "MockSampleTest.cs",
+    "RealHikerTest.cs",
+    "SaboteurSampleTest.cs",
+    "SpySampleTest.cs",
+    "StubSampleTest.cs"
+  ],
+
+  "filename_extension" : ".cs",
+
+  "display_name": "Test Double Samples, C# Moq",
+
+  "image_name": "cyberdojofoundation/csharp_moq",
+
+  "red_amber_green" : [
+    "lambda { |output|",
+    "  return :red   if /^Errors and Failures:/.match(output)",
+    "  return :green if /^Tests run: (\\d*), Errors: 0, Failures: 0/.match(output)",
+    "  return :amber",
+    "}"
+  ]
+}
