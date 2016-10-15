@@ -4,16 +4,12 @@
     "cyber-dojo.sh",
     "Game.java",
     "GameRunner.java",
-    "GameRunnerTest.java",
-    "GoldenMasterData.java",
-    "GoldenMasterTest.java",
-    "StdOut.java",
-    "UglyTriviaTests.java"
+    "GameRunnerTest.java"
   ],
 
   "filename_extension" : ".java",
 
-  "display_name": "Ugly Trivia, Java Mockito",
+  "display_name": "Ugly Trivia, Java original",
 
   "image_name": "cyberdojofoundation/java_mockito",
 

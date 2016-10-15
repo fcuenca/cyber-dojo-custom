@@ -1,0 +1,27 @@
+{
+  "visible_filenames": [
+    "instructions",
+    "cyber-dojo.sh",
+    "Game.java",
+    "GameRunner.java",
+    "GameRunnerTest.java",
+    "GoldenMasterData.java",
+    "GoldenMasterTest.java",
+    "StdOut.java",
+    "UglyTriviaTests.java"
+  ],
+
+  "filename_extension" : ".java",
+
+  "display_name": "Ugly Trivia, Java w/Tests",
+
+  "image_name": "cyberdojofoundation/java_mockito",
+
+  "red_amber_green" : [
+    "lambda { |output|",
+    "  return :red   if /^Tests run: (\\d*),(\\s)+Failures: (\\d*)/.match(output)",
+    "  return :green if /^OK \\((\\d*) test/.match(output)",
+    "  return :amber",
+    "}"
+  ]
+}

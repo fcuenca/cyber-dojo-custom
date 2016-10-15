@@ -5,16 +5,12 @@
     "instructions",
     "Game.cs",
     "GameRunner.cs",
-    "GameRunnerTest.cs",
-    "GoldenMasterData.cs",
-    "GoldenMasterTest.cs",
-    "StdOut.cs",
-    "UglyTriviaTests.cs"
+    "GameRunnerTest.cs"
   ],
 
   "filename_extension" : ".cs",
 
-  "display_name": "Ugly Trivia, C# Moq",
+  "display_name": "Ugly Trivia, C# original",
 
   "image_name": "cyberdojofoundation/csharp_moq",
 
