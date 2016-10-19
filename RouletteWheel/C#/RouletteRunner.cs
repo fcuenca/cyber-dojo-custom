@@ -8,7 +8,7 @@ public class RouletteRunner
     private bool DISABLED = false;
 
     [Test]
-    public void elephant_carpaccio()
+    public void run_simulation()
     {
         if(DISABLED) return;
 
