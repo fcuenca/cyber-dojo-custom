@@ -1,0 +1,29 @@
+{
+  "visible_filenames": [
+    ".jshintrc",
+    "captures.js",
+    "config.js",
+    "cyber-dojo.sh",
+    "game_runner_test.js",
+    "golden_master_data.js",
+    "golden_master_test.js",
+    "instructions",
+    "ugly_trivia_test.js",
+    "ugly_trivia.js"
+  ],
+
+  "filename_extension" : ".js",
+
+  "display_name": "Ugly Trivia, Javascript w/Tests",
+
+  "image_name": "cyberdojofoundation/javascript-node_mocha_chai_sinon",
+
+  "red_amber_green": [
+      "lambda { |output|",
+      "  return :red   if /AssertionError:/.match(output)",
+      "  return :amber if /SyntaxError:/.match(output)",
+      "  return :amber if /ReferenceError:/.match(output)",
+      "  return :amber if /TypeError:/.match(output)",
+      "  return :green",
+      "}"]
+}
